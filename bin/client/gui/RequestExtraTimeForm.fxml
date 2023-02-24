@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.2613065326633166" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="473.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.RequestExtraTimeController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="97.0" prefWidth="584.0">
+         <children>
+            <Text layoutX="254.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Request extra time" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="307.0" prefWidth="598.0">
+         <children>
+            <Label layoutX="38.0" layoutY="33.0" text="Reasons:" />
+            <TextField fx:id="txtReasons" alignment="TOP_LEFT" layoutX="110.0" layoutY="32.0" prefHeight="146.0" prefWidth="461.0" />
+            <Button layoutX="553.0" layoutY="256.0" mnemonicParsing="false" onAction="#clickRequest" text="Request" />
+            <Button layoutX="41.0" layoutY="271.0" mnemonicParsing="false" onAction="#clickBack" text="Back" />
+            <Text layoutX="65.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" />
+            <TextField fx:id="txtTime" layoutX="125.0" layoutY="203.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

@@ -1,0 +1,20 @@
+@charset "windows-1255";
+
+#btn {
+	-fx-background-color:  #7f7454;
+	 background-color:  #7f7454;
+	-fx-border-radius:  5em;
+	 border-radius: 5em;
+	-fx-background-radius: 5em;
+}
+
+#upAncPane {
+	-fx-background-color:  #3d4956;
+	 background-color:  #3d4956;
+	
+}
+
+#title {
+	-fx-background-color: white;
+	 background-color: white;
+}

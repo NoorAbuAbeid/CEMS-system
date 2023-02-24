@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.18164435946462715" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="525.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.CreateTestBankController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="212.0" prefWidth="676.0">
+         <children>
+            <Text fx:id="txtCreateTestsBank" layoutX="163.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    Create Tests Bank" textAlignment="CENTER" wrappingWidth="268.92578154057264">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button fx:id="btnBack" layoutX="37.0" layoutY="367.0" mnemonicParsing="false" onAction="#click_back" style="-fx-background-color: #7f7454; -fx-background-radius: 5em;" styleClass="btn" text="Back" textFill="WHITE" />
+            <Label fx:id="lblBankName" layoutX="28.0" layoutY="15.0" text="Bank name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCourseName" layoutX="28.0" layoutY="65.0" text="Course name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblExistingBanks" layoutX="24.0" layoutY="111.0" text="Existing banks">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBankName" layoutX="166.0" layoutY="15.0" styleClass="txtField" />
+            <TextField fx:id="txtCourseName" layoutX="166.0" layoutY="65.0" styleClass="txtField" />
+            <ListView fx:id="lstViewExistingBanks" layoutX="166.0" layoutY="112.0" prefHeight="200.0" prefWidth="200.0" styleClass="lstView" />
+            <Button fx:id="btnCreateBank" layoutX="455.0" layoutY="311.0" mnemonicParsing="false" onAction="#click_createBank" style="-fx-background-color: #7f7454; -fx-background-radius: 5em;" styleClass="btn" text="Create bank" textFill="WHITE" />
+            <Button fx:id="btnCreateTest" layoutX="459.0" layoutY="45.0" mnemonicParsing="false" onAction="#click_createTest" style="-fx-background-color: #7f7454; -fx-background-radius: 5em;" styleClass="btn" text="Create test" textFill="WHITE" />
+            <Text layoutX="431.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(must create a test before create a bank)" wrappingWidth="142.50196141004562" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

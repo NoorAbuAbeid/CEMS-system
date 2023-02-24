@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="725.0" prefWidth="1054.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.CreateTestController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-10.0" prefHeight="774.0" prefWidth="226.0" style="-fx-background-color: #7D9688;">
+         <children>
+            <Label layoutX="3.0" layoutY="127.0" prefHeight="62.0" prefWidth="220.0" style="-fx-border-color: white; -fx-border-radius: 5;" text="Create Test" textAlignment="JUSTIFY" textFill="#1f093e">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="760.0" fitWidth="832.0" layoutX="222.0">
+         <image>
+            <Image url="@abstract-minimal-white-background_23-2148887988.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="356.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="172.21484375" />
+      <Text fill="#1f093e" layoutX="242.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello teacher..." wrappingWidth="338.9368438720703">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Label layoutX="253.0" layoutY="111.0" text="Bank Name" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbBankName" editable="true" layoutX="389.0" layoutY="110.0" prefHeight="31.0" prefWidth="157.0" promptText="Choose Bank" style="-fx-background-color: white;" styleClass="comboBox" />
+      <Label fx:id="CourseNametxt_CreateTest" layoutX="232.0" layoutY="161.0" text="Course Name" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Durationtxt_CreateTest" layoutX="277.0" layoutY="235.0" text="Duration" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="TNotestxt_CreateTest" layoutX="222.0" layoutY="352.0" text="Teacher's Notes" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Snotestxt_CreateTest" layoutX="222.0" layoutY="470.0" text="Student's Notes" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCourseName" editable="true" layoutX="389.0" layoutY="161.0" prefHeight="31.0" prefWidth="157.0" promptText="Choose Course" style="-fx-background-color: white;" styleClass="cmbBox" />
+      <TextField fx:id="txtDuration" layoutX="397.0" layoutY="235.0" prefHeight="31.0" prefWidth="141.0" promptText="Enter Duration" styleClass="txtField" />
+      <TextArea fx:id="txtStudentNotes" layoutX="377.0" layoutY="485.0" prefHeight="72.0" prefWidth="295.0" promptText="Add Text" style="-fx-background-color: gray;" styleClass="txtField" />
+      <TextArea fx:id="txtTeacherNotes" layoutX="380.0" layoutY="367.0" prefHeight="72.0" prefWidth="295.0" promptText="Add Text" style="-fx-background-color: gray;" styleClass="txtField" />
+      <Button fx:id="btnStartEdit" layoutX="377.0" layoutY="283.0" mnemonicParsing="false" onAction="#click_startEdit" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" styleClass="btn" text="Start Edit" textFill="WHITE" />
+      <Button fx:id="btnStopEdit" layoutX="468.0" layoutY="283.0" mnemonicParsing="false" onAction="#click_stopEdit" prefHeight="32.0" prefWidth="85.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" styleClass="btn" text="Stop Edit" textFill="WHITE" />
+      <Label fx:id="lblTeacherUsername" layoutX="689.0" layoutY="111.0" text="Teacher username :" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTeacherUsername" editable="false" layoutX="870.0" layoutY="111.0" prefHeight="31.0" prefWidth="171.0" />
+      <Label fx:id="lblTestID" layoutX="789.0" layoutY="162.0" text="Test ID :" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTestID" editable="false" layoutX="870.0" layoutY="161.0" prefHeight="31.0" prefWidth="172.0" />
+      <Button fx:id="btnAddQuestion" layoutX="785.0" layoutY="515.0" mnemonicParsing="false" onAction="#click_AddQuestion" prefHeight="42.0" prefWidth="171.0" style="-fx-background-color: #1f093e; -fx-border-radius: 5em; -fx-background-radius: 5em;" styleClass="btn" text="Add Question" textFill="WHITE" />
+      <Button fx:id="btnCreateTest" layoutX="565.0" layoutY="571.0" mnemonicParsing="false" onAction="#click_CreateTest" prefHeight="49.0" prefWidth="141.0" style="-fx-background-color: #1f093e; -fx-border-radius: 5em; -fx-background-radius: 5em;" styleClass="btn" text="Create Test" textFill="WHITE" />
+      <Button fx:id="btnEdit" layoutX="522.0" layoutY="647.0" mnemonicParsing="false" onAction="#click_edit" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" styleClass="btn" text="Edit" textFill="WHITE" />
+      <Button fx:id="btnDelete" layoutX="655.0" layoutY="647.0" mnemonicParsing="false" onAction="#click_delete" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" styleClass="btn" text="Delete" textFill="WHITE" />
+      <Button fx:id="btnNext" layoutX="960.0" layoutY="653.0" mnemonicParsing="false" onAction="#click_next" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" styleClass="btn" text="Next" textFill="#fcfcfc" />
+      <Button fx:id="btnPrevious" layoutX="857.0" layoutY="653.0" mnemonicParsing="false" onAction="#click_previous" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" styleClass="btn" text="previous" textFill="WHITE" />
+      <Button fx:id="btnBack" layoutX="246.0" layoutY="654.0" mnemonicParsing="false" onAction="#click_Back" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

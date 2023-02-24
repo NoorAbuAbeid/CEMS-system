@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="885.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.TeacherMenuController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-10.0" prefHeight="610.0" prefWidth="226.0" style="-fx-background-color: #7D9688;">
+         <children>
+            <Label layoutX="5.0" layoutY="50.0" prefHeight="62.0" prefWidth="220.0" style="-fx-border-color: white; -fx-border-radius: 5;" text="Teacher's Menu" textAlignment="JUSTIFY" textFill="#1f093e">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="15.0" layoutY="372.0">
+               <image>
+                  <Image url="@896689.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="600.0" fitWidth="663.0" layoutX="222.0">
+         <image>
+            <Image url="@abstract-minimal-white-background_23-2148887988.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="356.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="172.21484375" />
+      <Text fill="#1f093e" layoutX="248.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello teacher..." wrappingWidth="338.9368438720703">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCreateQuestion" layoutX="658.0" layoutY="210.0" mnemonicParsing="false" onAction="#click_createQuestion" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Create question" textFill="WHITE" />
+      <Button fx:id="btnBack" layoutX="780.0" layoutY="552.0" mnemonicParsing="false" onAction="#clickLogout" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Logout" textFill="WHITE" />
+      <Button fx:id="btnSeeTestsStatistics" layoutX="344.0" layoutY="493.0" mnemonicParsing="false" onAction="#click_seeTestStatistics" prefHeight="38.0" prefWidth="147.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="See tests statistics" textFill="WHITE" />
+      <Button fx:id="btnEditQuestion" layoutX="658.0" layoutY="304.0" mnemonicParsing="false" onAction="#click_editQuestion" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Edit question" textFill="WHITE" />
+      <Button fx:id="btnCheckTestScore" layoutX="443.0" layoutY="393.0" mnemonicParsing="false" onAction="#click_checkTestScore" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Check test score" textFill="WHITE" />
+      <Button fx:id="btnCreateTestBank" layoutX="262.0" layoutY="208.0" mnemonicParsing="false" onAction="#click_CreateTest" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Create Test" textFill="WHITE" />
+      <Button fx:id="btnEditTest" layoutX="450.0" layoutY="210.0" mnemonicParsing="false" onAction="#click_editTest" prefHeight="34.0" prefWidth="115.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Edit Test" textFill="WHITE" />
+      <Button fx:id="btnViewTest" layoutX="262.0" layoutY="300.0" mnemonicParsing="false" onAction="#click_viewTest" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="View Test" textFill="WHITE" />
+      <Button fx:id="btnPlanningATest" layoutX="443.0" layoutY="300.0" mnemonicParsing="false" onAction="#clickPlaningATest" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Planning a test" textFill="WHITE" />
+      <Button fx:id="btnManageATest" layoutX="262.0" layoutY="393.0" mnemonicParsing="false" onAction="#clickManageTest" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Manage a test" textFill="WHITE" />
+      <Label layoutX="380.0" layoutY="122.0" prefHeight="62.0" prefWidth="75.0" text="Tests:" textAlignment="JUSTIFY" textFill="#330775">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="667.0" layoutY="130.0" prefHeight="62.0" prefWidth="147.0" text="Questions:" textAlignment="JUSTIFY" textFill="#330775">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

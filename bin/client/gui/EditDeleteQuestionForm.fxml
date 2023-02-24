@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="885.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.EditDeleteQuestionController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-10.0" prefHeight="610.0" prefWidth="226.0" style="-fx-background-color: #7D9688;">
+         <children>
+            <Label layoutX="5.0" layoutY="50.0" prefHeight="62.0" prefWidth="220.0" style="-fx-border-color: white; -fx-border-radius: 5;" text="Edit Question" textAlignment="JUSTIFY" textFill="#1d0443">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="189.0" fitWidth="179.0" layoutX="26.0" layoutY="377.0">
+               <image>
+                  <Image url="@381-3810853_edit-question-pencil-ask-grey-query-q-derivative.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="600.0" fitWidth="663.0" layoutX="222.0">
+         <image>
+            <Image url="@abstract-minimal-white-background_23-2148887988.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="356.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="172.21484375" />
+      <Text fill="#330775" layoutX="242.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello teacher..." wrappingWidth="338.9368438720703">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Label layoutX="253.0" layoutY="78.0" text="Subject" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbSubject" editable="true" layoutX="333.0" layoutY="78.0" prefHeight="31.0" prefWidth="140.0" promptText="Subject" style="-fx-background-color: white;" styleClass="comboBox" />
+      <Label layoutX="570.0" layoutY="145.0" text="Description" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtDescription" layoutX="570.0" layoutY="183.0" prefHeight="205.0" prefWidth="294.0" promptText="Add text" styleClass="txtField" />
+      <Label layoutX="253.0" layoutY="145.0" text="Questions:" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEdit" layoutX="651.0" layoutY="481.0" mnemonicParsing="false" onAction="#click_edit" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Edit" textFill="WHITE" />
+      <Button fx:id="btnBack" layoutX="779.0" layoutY="547.0" mnemonicParsing="false" onAction="#click_back" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Back" textFill="WHITE" />
+      <ListView fx:id="lstQuestions" layoutX="253.0" layoutY="183.0" prefHeight="298.0" prefWidth="220.0" />
+   </children>
+</AnchorPane>

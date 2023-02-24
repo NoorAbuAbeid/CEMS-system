@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="437.0" prefWidth="788.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.PlanningATestController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-10.0" prefHeight="451.0" prefWidth="226.0" style="-fx-background-color: #7D9688;">
+         <children>
+            <Label layoutX="5.0" layoutY="50.0" prefHeight="62.0" prefWidth="220.0" style="-fx-border-color: white; -fx-border-radius: 5;" text="Planning A Test" textAlignment="JUSTIFY" textFill="#1d0443">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="441.0" fitWidth="582.0" layoutX="222.0">
+         <image>
+            <Image url="@../מסכים/abstract-minimal-white-background_23-2148887988.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="356.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="172.21484375" />
+      <Text fill="#330775" layoutX="271.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Teacher.." wrappingWidth="324.9765625">
+         <font>
+            <Font name="System Italic" size="25.0" />
+         </font>
+      </Text>
+      <Label layoutX="356.0" layoutY="175.0" text="Test ID" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="231.0" text="Teacher username" textFill="#330775">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTestID" layoutX="454.0" layoutY="175.0" prefHeight="31.0" prefWidth="148.0" />
+      <TextField fx:id="txtUsername" layoutX="454.0" layoutY="246.0" prefHeight="31.0" prefWidth="148.0" />
+      <Text fill="#330775" layoutX="259.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(That built the test)">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="continueWithPlanning" layoutX="550.0" layoutY="302.0" mnemonicParsing="false" onAction="#clickContinueWithPlanning" prefHeight="44.0" prefWidth="183.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="continue with planning" textFill="WHITE" />
+      <Button fx:id="btnBack" layoutX="248.0" layoutY="380.0" mnemonicParsing="false" onAction="#clickBack" prefHeight="27.0" prefWidth="74.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Back" textFill="#e8e2e2" />
+   </children>
+</AnchorPane>

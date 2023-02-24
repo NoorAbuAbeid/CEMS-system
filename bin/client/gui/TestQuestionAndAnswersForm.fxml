@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="885.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.TestQuestionsAndAnswersController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-10.0" prefHeight="610.0" prefWidth="226.0" style="-fx-background-color: #7D9688;">
+         <children>
+            <Label layoutX="22.0" layoutY="50.0" prefHeight="62.0" prefWidth="220.0" style="-fx-border-radius: 5;" text="Test Questions" textAlignment="JUSTIFY" textFill="#1f093e">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="112.0" prefHeight="62.0" prefWidth="220.0" style="-fx-border-radius: 5;" text="And Answers" textAlignment="JUSTIFY" textFill="#1f093e">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="600.0" fitWidth="663.0" layoutX="222.0">
+         <image>
+            <Image url="@../מסכים/abstract-minimal-white-background_23-2148887988.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="356.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="172.21484375" />
+      <Text fill="#1f093e" layoutX="242.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello teacher..." wrappingWidth="338.9368438720703">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Label layoutX="253.0" layoutY="80.0" style="-fx-text-fill: #330775;" text="Points :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="points" layoutX="337.0" layoutY="85.0" prefHeight="17.0" prefWidth="39.0" />
+      <RadioButton fx:id="answer3" layoutX="291.0" layoutY="270.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="13.0" />
+      <RadioButton fx:id="answer4" layoutX="291.0" layoutY="317.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="13.0" />
+      <RadioButton fx:id="answer1" layoutX="291.0" layoutY="173.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="11.0" />
+      <RadioButton fx:id="answer2" layoutX="291.0" layoutY="221.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="13.0" />
+      <Label layoutX="266.0" layoutY="173.0" text="1." />
+      <Label layoutX="266.0" layoutY="221.0" text="2." />
+      <Label layoutX="266.0" layoutY="269.0" prefHeight="18.0" prefWidth="21.0" text="3." />
+      <Label layoutX="266.0" layoutY="316.0" prefHeight="18.0" prefWidth="21.0" text="4." />
+      <Label fx:id="option1" layoutX="326.0" layoutY="173.0" text="Answer 1" />
+      <Label fx:id="option2" layoutX="326.0" layoutY="221.0" text="Answer 2" />
+      <Label fx:id="option3" layoutX="326.0" layoutY="269.0" text="Answer 3" />
+      <Label fx:id="option4" layoutX="326.0" layoutY="316.0" text="Answer 4" />
+      <Text fx:id="txtTime" fill="#330775" layoutX="528.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remaining Time : ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTimer" layoutX="663.0" layoutY="94.0" prefHeight="17.0" prefWidth="116.0" />
+      <Label fx:id="lblTeacherNotes" alignment="CENTER" layoutX="635.0" layoutY="173.0" prefHeight="176.0" prefWidth="210.0" />
+      <Text fill="#330775" layoutX="676.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher's Notes:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="qstDescription" alignment="TOP_LEFT" layoutX="251.0" layoutY="115.0" prefHeight="40.0" prefWidth="210.0" />
+      <Button fx:id="btnBack" layoutX="251.0" layoutY="542.0" mnemonicParsing="false" onAction="#click_Back" prefHeight="33.0" prefWidth="107.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Back" textFill="WHITE" />
+      <Button fx:id="btnNext" layoutX="769.0" layoutY="542.0" mnemonicParsing="false" onAction="#click_Next" prefHeight="33.0" prefWidth="107.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Next" textFill="WHITE" />
+      <Button fx:id="btnNext_preview" layoutX="769.0" layoutY="542.0" mnemonicParsing="false" onAction="#click_Next_Preview" prefHeight="33.0" prefWidth="107.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Next" textFill="WHITE" />
+      <Button fx:id="btnBack_Preview" layoutX="251.0" layoutY="542.0" mnemonicParsing="false" onAction="#click_Back_preview" prefHeight="33.0" prefWidth="107.0" style="-fx-background-color: #1f093e; -fx-background-radius: 5em;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>
